@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MyWebPage</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+     <script type="text/javascript">
+      function validate()
+      {
+
+      	 if( document.getElementById('name').value == "" )
+         {
+            alert( "Please provide your name!" );
+            //document.getElementById('name').focus() ;
+            return false;
+         }
+         if (document.getElementById('age').value=="") 
+         {
+  			alert( "Please provide your Age!" );
+            return false;
+         }
+    	 if (document.getElementById('branch').value=="") 
+         {
+  			alert( "Please provide your Branch!" );
+            return false;
+         }
+         if (document.getElementById('section').value=="") 
+         {
+  			alert( "Please provide your Section!" );
+            return false;
+         }
+      	return (true);
+      }
+     </script>
+
+</head>
+<body bgcolor="#424242">
+	 	 <div class="card-panel red lighten-2" align="center" >
+	 		 <font color="WHITE" size="9">
+	 		 <img src="C:\Users\fcit\Desktop\Web\baseline_pets_white_48.png" alt="pet" width="60" height="60">
+	  		 MyWebPage
+	 	 	 </font>
+	 	 </div>
+	 	 <div class="row">
+	 		 <div class="col s6">
+	  		 	 <p>
+	  			 <font color="WHITE" size="4">
+	  			 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+	  		 	 </font>
+	  		     </p>
+	  		 </div>
+
+	  		  <div class="col s6">
+	  			<div class="card-panel WHITE" align="start">
+
+    				
+	  				<font color="#424242" size="3" ><b>
+	  				<div style="text-align: center;">
+	  				<img src="C:\Users\fcit\Desktop\Web\baseline_account_box_black_48.png" alt="pet" width="20" height="20">
+	  				</div>
+	  				<div style="text-align: center;">
+	  				LOGIN
+	  				</b></font>
+	  				<input placeholder="Name" id="name" type="text" class="validate">
+          			<input placeholder="Age" id="age" type="text" class="validate">
+          			<input placeholder="Branch" id="branch" type="text" class="validate">
+          			<input placeholder="Section" id="section" type="text" class="validate">
+          			<p>
+          			
+
+
+     
+          			</p>
+          			<a class="waves-effect waves-light btn" id="submit" onclick="validate()">SUBMIT</a>
+
+	  			</div>
+	 		  </div>
+	 	 </div>	 		
+</body>
+</html>

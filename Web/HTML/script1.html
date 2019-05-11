@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Script</title>
+</head>
+<body>
+	<script type="text/Javascript">
+		var a = 5.23;
+		var b = "Hello world";
+		var c = 'c';
+		document.write(typeof a);
+		document.write(typeof b);
+
+		var d = {
+			name:"Shiv",
+			age:10,
+			marks:100,
+		}
+		if(a<2){
+			document.write("Case1");
+			
+		}
+
+		else if(a>4){
+			document.write("Case2");
+			document.write('<br />');
+		}
+
+		else{
+			document.write("Case3");
+		}
+
+		switch(c){
+			case 'a':
+				document.write('a');
+				break;
+			case 'b':
+				document.write('b');
+				break;
+			default:
+				document.write("Nothibg");
+		}
+
+		for (i in d){
+			document.write(i);
+			document.write('<br />')
+		}
+
+		for (property in navigator){
+			document.write(property);
+			document.write('<br />');
+		}
+	</script>
+
+</body>
+</html>
